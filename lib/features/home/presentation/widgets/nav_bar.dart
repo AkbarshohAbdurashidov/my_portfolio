@@ -134,13 +134,14 @@ class _Logo extends StatelessWidget {
                 gradient: AppColors.primaryGradient,
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Center(
-                child: Text(
-                  'AA',
-                  style: GoogleFonts.poppins(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                    fontSize: 14,
+              child: ClipOval(
+                clipBehavior: Clip.none,
+                child: Center(
+                  child: Image.asset(
+                    height: 200,
+                    width: 200,
+                    fit: BoxFit.cover,
+                    'assets/images/profile_photo.png',
                   ),
                 ),
               ),

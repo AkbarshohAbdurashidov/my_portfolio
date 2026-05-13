@@ -149,13 +149,13 @@ class _ProfileCard extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Center(
-                      child: Text(
-                        'AA',
-                        style: GoogleFonts.poppins(
-                          color: Colors.white,
-                          fontSize: 36,
-                          fontWeight: FontWeight.w800,
+                    child: ClipOval(
+                      child: Center(
+                        child: Image.asset(
+                          height: 200,
+                          width: 200,
+                          fit: BoxFit.cover,
+                          'assets/images/profile_photo.png',
                         ),
                       ),
                     ),
